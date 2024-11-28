@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Github Profilleri</title>
+</head>
+<body>
+    <div class="container">  
+        <h1>Github Api ile Çalışmak</h1>
+        <div class="searchBox"> <!--kullanıcının bir metin girerek arama yapabileceği bölüm oluşturdum.-->
+            <input
+            type="text" 
+            id="searchInput"
+            placeholder="Github Kullanıcı Adı">
+            <button onclick="searchGithub()">Getir</button>
+            <!--kullanıcı kutuya text girebilir şekilde ayarladım.
+            placeholder=arama kutusunda default olarak yazacak olan metin, kullanıcıdan ne istediğini belirtir.
+            buton oluşturdum.
+            -->
+        </div>
+        <div id="result" class="details"></div>
+        <!--boş bir alan oluşturdum.Sonuçlar geldiğinde burada yazdırılacak.-->
+
+    </div>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
